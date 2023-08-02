@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    font-family: 'Bebas Neue', cursive;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 35px;
+}
+body{
+    width: 80vw;
+    background-image: url(img/imagem\ 5.webp);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.titulo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80vw;
+    height: 40px;
+    display: grid;
+    text-align: center;
+    padding-top: 50px;
+    height: 150px;
+    background-color: blue;
+    background-image:url(img/fundo-de-rede-3d-com-linhas-e-pontos-de-conexao_1048-9850.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+#icone{
+    margin-left: 65vw;
+    width: 40px;
+    height: 40px;
+}
+li:hover{
+    background-image:linear-gradient(to right,  rgb(221, 74, 0), rgb(232, 205, 0), rgb(0, 152, 228));
+}
+li{
+    text-align: center;
+    width: 100%;
+}
+.opção1{grid-area: html; background-color: rgb(221, 74, 0); border-radius: 10px;}
+.opção2{grid-area: js; background-color: rgb(232, 205, 0); border-radius: 10px;}
+.opção3{grid-area: css;background-color: rgb(0, 152, 228); border-radius: 10px;}
+ 
+nav{
+    text-align: center;
+    position:sticky;
+    top: 10px;
+}
+
+.menu{
+    border-radius: 10px;
+    display: grid;
+    padding: 3px;
+    grid-template-columns: 30% 30% 30%;
+    list-style: none;
+    column-gap: 10px;
+    grid-template-areas:
+    "html js css";
+    width: 100%;
+    justify-content: center;
+}
+#imagem{
+    display: grid;
+    justify-content: center;
+}
+#hcj{
+    width: 100%;
+}
+h2, .descrição3{
+    width: 100%;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+#caixa-descrição{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:30% 30% 30% ;
+    column-gap: 10px;
+    grid-template-areas:
+    "a b c "
+    ;
+}
+.descrição1{ grid-area: a; background-color: rgb(221, 74, 0); margin-bottom: 10px;}
+.descrição2{ grid-area: b; background-color: rgb(232, 205, 0); margin-bottom: 10px;}
+.descrição3{ grid-area: c; background-color: rgb(0, 152, 228); margin-bottom: 10px;}
+#menu1{
+    padding: 20px;
+}
+/*.conteudo{
+    display: flex; 
+}
+#Copyright{
+    font-size: 25px;
+    margin-right: 569px;
+    padding-top: 5px;
+}
+.rs{
+    width: 40px;
+    height: 40px;
+}
+.rodape{
+    width: 80vw;
+    margin-top: 60px;
+    background-color: brown;
+}*/
+.rs1{width: 30px; height: 30px;}
+.rs2{width: 30px; height: 30px;}
+.rs3{width: 30px; height: 30px;}
+.rodape{
+    display: grid;
+    margin-top: 40px;
+    background-color: brown;
+    border: solid  5px rgb(0, 182, 253);
+    border-radius: 10px;
+    background-image:url(img/fundo-de-rede-3d-com-linhas-e-pontos-de-conexao_1048-9850.webp);
+}
+#Copyright{
+    float:left;
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: 200px 30px 30px 30px;
+    column-gap: 10px;
+    align-items: center;
+    
+}
+
+
+@media only screen and (max-width: 750px) {
+    .menu{
+        background-image:linear-gradient(to right,  rgb(221, 74, 0), rgb(232, 205, 0), rgb(0, 152, 228));
+        display: block;
+    }
+    li{
+        margin:10px 0;
+    }
+    #caixa-descrição{
+        display: block;
+    }
+}
